@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  isSideNavOpen: boolean;
+  isSideNavOpen: boolean= false;
   constructor() { }
 
   ngOnInit(): void {
