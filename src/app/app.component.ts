@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToggleStatusEmit } from './header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'priyanshiPortfolio';
+  scrollToView(scrollData:ToggleStatusEmit){
+    console.log(scrollData);
+  }
 }
