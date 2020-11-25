@@ -13,7 +13,7 @@ export class AppComponent {
     this.status = selectedPage.toggleStatus;
     if (selectedPage.selectedPage) {
       setTimeout(() => {
-        document.getElementById(selectedPage.selectedPage)?.scrollIntoView({ behavior: 'smooth' })
+        document.getElementById(selectedPage.selectedPage)?.scrollIntoView({behavior: "smooth"})
       }, 1);
     }
   }
