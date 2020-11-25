@@ -8,14 +8,13 @@ import { ToggleStatusEmit } from './header/header.component';
 })
 export class AppComponent {
   title = 'priyanshiPortfolio';
-  scrollToView(scrollData: ToggleStatusEmit) {
-    if (scrollData.selectedPage) {
-      const test=scrollData.selectedPage
+  status: boolean = false;
+  scrollToView(selectedPage: ToggleStatusEmit) {
+    this.status = selectedPage.toggleStatus;
+    if (selectedPage.selectedPage) {
       setTimeout(() => {
-        document.getElementById(test).scrollIntoView({
-          behavior: "smooth"
-        })
-      }, 1)
+        document.getElementById(selectedPage.selectedPage)?.scrollIntoView({ behavior: 'smooth' })
+      }, 1);
     }
   }
 }
